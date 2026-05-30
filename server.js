@@ -17,6 +17,7 @@ res.send(`
 
 
 
+
 <!DOCTYPE html>
 <html>
 
@@ -40,7 +41,7 @@ margin-top:30px;
 }
 
 button{
-width:180px;
+width:220px;
 height:70px;
 margin:12px;
 font-size:20px;
@@ -117,11 +118,9 @@ font-size:24px;
 
 @media(max-width:600px){
 
-button{
+.left,
+.right{
 width:160px;
-height:65px;
-font-size:18px;
-margin:8px;
 }
 
 .stop{
@@ -288,6 +287,7 @@ document.getElementById("estado").innerHTML =
 </body>
 
 </html>
+
 
 
 
