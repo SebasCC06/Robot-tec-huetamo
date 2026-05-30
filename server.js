@@ -22,7 +22,7 @@ res.send(`
 
 body{
 font-family: Arial;
-background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background: linear-gradient(135deg,#141E30,#243B55);
 color:white;
 text-align:center;
 margin:0;
@@ -33,27 +33,113 @@ margin-top:30px;
 }
 
 button{
-width:140px;
-height:60px;
-margin:8px;
-font-size:18px;
+width:220px;
+height:70px;
+margin:12px;
+font-size:20px;
 border:none;
 border-radius:12px;
 font-weight:bold;
 cursor:pointer;
 }
 
-.forward{background:#4CAF50;color:white;}
-.back{background:#4CAF50;color:white;}
-.left{background:#2196F3;color:white;}
-.right{background:#2196F3;color:white;}
-.stop{background:#f44336;color:white;width:300px;}
+.control{
+background:#00C853;
+color:white;
+}
+
+.participantes{
+background:#2979FF;
+color:white;
+}
+
+.forward{
+background:#00C853;
+color:white;
+}
+
+.back{
+background:#FF9100;
+color:white;
+}
+
+.left{
+background:#2979FF;
+color:white;
+}
+
+.right{
+background:#651FFF;
+color:white;
+}
+
+.stop{
+background:#FF1744;
+color:white;
+width:300px;
+}
+
+#estado{
+
+background:rgba(255,255,255,0.1);
+
+display:inline-block;
+
+padding:10px 20px;
+
+border-radius:12px;
+
+margin-top:20px;
+
+}
+
+#menu{
+margin-top:80px;
+}
+
+#controlPanel{
+display:none;
+}
+
+#participantesPanel{
+display:none;
+margin-top:50px;
+font-size:24px;
+}
 
 </style>
 
 </head>
 
 <body>
+
+<div id="menu">
+
+<div style="text-align:center;">
+
+<img src="logo.png" width="150" height="150">
+
+<br>
+
+</div>
+
+<h1>HOLA MAY</h1>
+
+<button class="control"
+onclick="mostrarControl()">
+CONTROL
+</button>
+
+<br>
+
+<button class="participantes"
+onclick="mostrarParticipantes()">
+COLABORADORES
+</button>
+
+</div>
+
+<div id="controlPanel">
 
 <h1>CONTROL ROBOT</h1>
 
@@ -87,7 +173,7 @@ ATRAS
 
 <button class="stop"
 onclick="enviar('detener')">
-PARAR
+DETENER
 </button>
 
 </div>
@@ -96,7 +182,61 @@ PARAR
 Comando actual: detener
 </h2>
 
+<br>
+
+<button onclick="volverMenu()">
+VOLVER
+</button>
+
+</div>
+
+<div id="participantesPanel">
+
+<h1>Alumnos</h1>
+
+<p>• Sebastian</p>
+<p>•  </p>
+<p>•  </p>
+
+<h1>Docentes</h1>
+<p>• Manuel loeza</p>
+<p>• Edgar Chavez</p>
+
+<br>
+
+<button onclick="volverMenu()">
+VOLVER
+</button>
+
+</div>
+
 <script>
+
+function mostrarControl(){
+
+document.getElementById("menu").style.display="none";
+
+document.getElementById("controlPanel").style.display="block";
+
+}
+
+function mostrarParticipantes(){
+
+document.getElementById("menu").style.display="none";
+
+document.getElementById("participantesPanel").style.display="block";
+
+}
+
+function volverMenu(){
+
+document.getElementById("menu").style.display="block";
+
+document.getElementById("controlPanel").style.display="none";
+
+document.getElementById("participantesPanel").style.display="none";
+
+}
 
 async function enviar(cmd){
 
@@ -122,6 +262,7 @@ document.getElementById("estado").innerHTML =
 </script>
 
 </body>
+
 </html>
 
 `);
@@ -153,3 +294,4 @@ app.listen(PORT, () => {
 console.log("Servidor iniciado");
 
 });
+
