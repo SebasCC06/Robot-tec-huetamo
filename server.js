@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 res.send(`
 
 
+
 <!DOCTYPE html>
 <html>
 
@@ -38,8 +39,7 @@ margin-top:30px;
 }
 
 button{
-width:90%;
-max-width:220px;
+width:180px;
 height:70px;
 margin:12px;
 font-size:20px;
@@ -82,8 +82,8 @@ color:white;
 .stop{
 background:#FF1744;
 color:white;
-width:90%;
-max-width:300px;
+width:420px;
+max-width:90%;
 }
 
 #estado{
@@ -271,6 +271,7 @@ document.getElementById("estado").innerHTML =
 </body>
 
 </html>
+
 
 
 `);
