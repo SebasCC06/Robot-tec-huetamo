@@ -146,7 +146,7 @@ max-width:90%;
 
 </div>
 
-<h1>HOLA MAY</h1>
+<h1>Bienvenido</h1>
 
 <button class="control"
 onclick="mostrarControl()">
