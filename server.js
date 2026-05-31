@@ -217,13 +217,15 @@ VOLVER
 
 <h1>Alumnos</h1>
 
-<p>• Sebastian</p>
-<p>•  </p>
-<p>•  </p>
+<p>• Sebastian Salvador Cortes Castillo</p>
+<p>• Luis Angel Mejia Santibañez</p>
+<p>• Armando Betancourt Silva</p>
+<p>• Gahel Reynoso Franco</p>
+<p>• Critopher Cisneros Marin</p>
 
 <h1>Docentes</h1>
-<p>• Manuel loeza</p>
-<p>• Edgar Chavez</p>
+<p>• Manuel loeza González</p>
+<p>• Edgar de Jesús Chávez Damián</p>
 
 <br>
 
