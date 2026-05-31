@@ -67,7 +67,7 @@ color:white;
 }
 
 .back{
-background:#FF9100;
+background:#FF69B4;
 color:white;
 }
 
