@@ -430,7 +430,7 @@ res.send(`
       <div class="collab-avatar av-blue">ML</div>
       <div>
         <div class="collab-name">Manuel Loeza González</div>
-        <div class="collab-role">Docente · Electrónica</div>
+        <div class="collab-role">Docente · Encargado</div>
       </div>
     </div>
 
@@ -438,7 +438,7 @@ res.send(`
       <div class="collab-avatar av-purple">EC</div>
       <div>
         <div class="collab-name">Edgar de Jesús Chávez Damián</div>
-        <div class="collab-role">Docente · Programación</div>
+        <div class="collab-role">Docente · Encargado</div>
       </div>
     </div>
   </div>
